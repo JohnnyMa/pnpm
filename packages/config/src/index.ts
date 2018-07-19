@@ -44,6 +44,7 @@ export const types = Object.assign({
   'side-effects-cache': Boolean,
   'side-effects-cache-readonly': Boolean,
   'store': path,
+  'tasks-concurrency': Number,
   'use-running-store-server': Boolean,
   'use-store-server': Boolean,
   'verify-store-integrity': Boolean,
@@ -81,6 +82,7 @@ export default async (
     'prefix': npmDefaults.prefix,
     'registry': npmDefaults.registry,
     'shrinkwrap': npmDefaults.shrinkwrap,
+    'tasks-concurrency': 4,
     'unsafe-perm': npmDefaults['unsafe-perm'],
     'userconfig': npmDefaults.userconfig,
   })
